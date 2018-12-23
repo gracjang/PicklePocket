@@ -9,5 +9,16 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" 
+		
 		/>
+	<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+		app:backgroundTint="#00CC00"
+		android:background="#00CC00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+		 android:layout_alignParentRight="true"
+        android:src="@drawable/round_add_white_48"
+        android:layout_margin="16dp" />
 </RelativeLayout>
