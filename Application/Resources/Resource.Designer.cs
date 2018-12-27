@@ -3232,6 +3232,12 @@ namespace Application
 			// aapt resource value: 0x7f0a007e
 			public const int edit_query = 2131361918;
 			
+			// aapt resource value: 0x7f0a0090
+			public const int editor = 2131361936;
+			
+			// aapt resource value: 0x7f0a008f
+			public const int editor2 = 2131361935;
+			
 			// aapt resource value: 0x7f0a0030
 			public const int end = 2131361840;
 			
@@ -3445,8 +3451,8 @@ namespace Application
 			// aapt resource value: 0x7f0a000b
 			public const int parent_matrix = 2131361803;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int parent_title = 2131361938;
+			// aapt resource value: 0x7f0a0091
+			public const int parent_title = 2131361937;
 			
 			// aapt resource value: 0x7f0a004d
 			public const int pin = 2131361869;
@@ -3459,6 +3465,9 @@ namespace Application
 			
 			// aapt resource value: 0x7f0a0075
 			public const int radio = 2131361909;
+			
+			// aapt resource value: 0x7f0a0092
+			public const int rating = 2131361938;
 			
 			// aapt resource value: 0x7f0a008b
 			public const int recycler_view = 2131361931;
@@ -3657,15 +3666,6 @@ namespace Application
 			
 			// aapt resource value: 0x7f0a0026
 			public const int useLogo = 2131361830;
-			
-			// aapt resource value: 0x7f0a008f
-			public const int username = 2131361935;
-			
-			// aapt resource value: 0x7f0a0090
-			public const int username1 = 2131361936;
-			
-			// aapt resource value: 0x7f0a0091
-			public const int username3 = 2131361937;
 			
 			// aapt resource value: 0x7f0a0016
 			public const int view_offset_helper = 2131361814;

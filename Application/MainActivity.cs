@@ -7,6 +7,7 @@ using Android.Support.V7.Widget;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using Android.Content;
 using Android.Support.Design.Widget;
 using Android.Views;
 using ButtonCircle.FormsPlugin.Droid;
@@ -41,7 +42,18 @@ namespace Application
             mRecyclerView.SetAdapter(mAdapter);
             */
             var fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+            
             fab.Click += delegate { ShowDialog(); };
+            
+
+
+        }
+
+        private void AddCityButton_Click()
+        {
+            LayoutInflater inflater = (LayoutInflater) BaseContext.GetSystemService(Context.LayoutInflaterService);
+            View addView = inflater.Inflate(Resource.Layout.addplace_layout, null);
+
         }
 
         private void insertSingleItem(string data)

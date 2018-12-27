@@ -16,10 +16,26 @@ namespace Application
     public class TitleParenViewHolder : ParentViewHolder
     {
         public TextView mTextView;
+        public ImageButton mImageButton;
+        private Context context;
         
         public TitleParenViewHolder(View view ) : base(view)
         {
+            
             mTextView = view.FindViewById<TextView>(Resource.Id.parent_title);
+            mImageButton = view.FindViewById<ImageButton>(Resource.Id.imageView1);
+            context = view.Context;
+            mImageButton.Click += delegate
+            {
+                context.StartActivity(typeof(AddActivity));
+                Toast.MakeText(this.context, "Click", ToastLength.Long).Show();
+            };
+
+        }
+        private void AddCityButton_Click()
+        {
+           
+
         }
     }
 }

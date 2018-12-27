@@ -19,5 +19,5 @@
 		android:id="@+id/editText1"
 		android:hint="City Name" 
 	/>
-	
+
 </LinearLayout>
