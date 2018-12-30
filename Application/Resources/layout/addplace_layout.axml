@@ -6,6 +6,8 @@
 	android:layout_height="match_parent">
 
 	<EditText
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:hint="Name"
@@ -13,6 +15,8 @@
 		android:id="@+id/editor2"
 	/>
 	<EditText
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
 		android:id="@+id/editor"
 		android:gravity="start"
 		android:inputType="textMultiLine"
@@ -36,6 +40,8 @@
 	
     />
 	<RatingBar
+		android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
 		android:id="@+id/rating"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
@@ -45,24 +51,56 @@
 		android:rating="3.0"
 		android:stepSize="1.0"
 		android:layout_alignParentRight="true"
-
         />
-	
-	<Button	 
-		android:id="@+id/Button1"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Get Location"
-	/>
-	<TextView
-		android:id="@+id/text1"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-	/>
-	<TextView
-		android:id="@+id/text2"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-	/>
 
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_gravity="fill"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/icons8_marker_48"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/titleOfLocation"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="start"
+				android:textAlignment="viewStart"
+				android:text="Wroclaw"
+				android:textSize="15dp"
+				android:textColor = "@android:color/black"/>
+			<TextView
+				android:id="@+id/title2OfLocation"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="start"
+				android:textAlignment="viewStart"
+				android:text="Poland, Dolnyslask"
+				android:textSize="10dp"
+				android:maxLines="1"
+				android:textColor = "@android:color/black"/>
+			<Button style="@style/CardView"
+				android:id="@+id/GetLocationButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="start"
+				android:textAlignment="viewStart"
+				android:text="Get Location"
+				android:textSize="10dp"
+				android:backgroundTint="@android:color/white"
+				android:layout_marginTop="4dp"
+				/>
+				
+	</LinearLayout>
+	
+</LinearLayout>
 </LinearLayout>
