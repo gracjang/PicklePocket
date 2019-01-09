@@ -30,6 +30,7 @@ namespace Application
         {
             var title = (TitleChild)childObject;
             childViewHolder.option1.Text = title.mOption1;
+
             childViewHolder.option1.Click += delegate
             {
                     childViewHolder.option1.Text = "Click";
@@ -43,10 +44,9 @@ namespace Application
         public override void OnBindParentViewHolder(TitleParenViewHolder parentViewHolder, int position, object parentObject)
         {
             var title = (TitleParent)parentObject;
+            
             parentViewHolder.mTextView.Text = title.Title;
-          
-
-
+            
         }
 
       
@@ -61,8 +61,9 @@ namespace Application
         public override TitleParenViewHolder OnCreateParentViewHolder(ViewGroup parentViewGroup)
         {
             var view = mInflater.Inflate(Resource.Layout.article_layout, parentViewGroup, false);
-
+         
             return new TitleParenViewHolder(view);
         }
+        
     }
 }

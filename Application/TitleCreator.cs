@@ -14,21 +14,21 @@ namespace Application
 {
     class TitleCreator
     {
-        static TitleCreator mTitleCreator;
+        //static TitleCreator mTitleCreator;
         List<TitleParent> mTitleParent;
 
-        private string title;
+        //private string title;
         //List<TitleChild> mTitleChild;
-        private Context context;
+        //private Context context;
 
         public TitleCreator()
         {
-
+            mTitleParent = new List<TitleParent>();
         }
 
         public void Add(string name_of_city)
         {
-            mTitleParent = new List<TitleParent>();
+            
             // mTitleChild = new List<TitleChild>();
 
             var title = new TitleParent()
