@@ -36,10 +36,22 @@ namespace Application
                 Title = name_of_city
             };
             mTitleParent.Add(title);
+           
+
+        }
+        public void Remove(string name_of_city)
+        {
+
+            // mTitleChild = new List<TitleChild>();
+
+            var title = new TitleParent()
+            {
+                Title = name_of_city
+            };
+            mTitleParent.Remove(title);
 
 
         }
-    
         public List<TitleParent> GetAll
         {
             get

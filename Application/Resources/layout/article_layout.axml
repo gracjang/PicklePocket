@@ -23,14 +23,23 @@
 			
 		/>
 		<ImageButton
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="right"
-			android:src="@drawable/round_add_24"
-			android:id="@+id/imageButton1"
-			android:backgroundTint="#ffc9c9c9" 
-			
-
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+			 android:layout_gravity="right"
+            android:src="@drawable/delete_btn"
+            android:id="@+id/imgButtonDelete"
+            android:backgroundTint="#e74c3c"
+            android:layout_marginRight="0.0dp" 
 		/>
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:src="@drawable/round_add_24"
+            android:id="@+id/imageButton1"
+            android:backgroundTint="#2ecc71"
+            android:layout_marginRight="0.0dp" 
+		/>
+		
 	</LinearLayout>
 </android.support.v7.widget.CardView>
